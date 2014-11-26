@@ -27,6 +27,8 @@ public class DynAlloyOptions {
 	private String output_filename;
 	
 	private String module_under_analysis_name;
+	
+	private boolean negatePost;
 
 	public static final DynAlloyOptions DEFAULT_DYNALLOY_OPTIONS = build_default_dynalloy_options();
 
@@ -141,6 +143,14 @@ public class DynAlloyOptions {
 	
 	public String getOutputFilename() {
 		return this.output_filename;
+	}
+	
+	public void setNegatePost(boolean negatePost) {
+		this.negatePost = negatePost;
+	}
+	
+	public boolean getNegatePost() {
+		return this.negatePost;
 	}
 	
 	

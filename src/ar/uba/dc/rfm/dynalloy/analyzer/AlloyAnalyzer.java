@@ -55,10 +55,10 @@ public class AlloyAnalyzer {
 		verbosity = b;
 	}
 
-	public AlloyAnalysisResult analyzeCommand(AlloyCommand commandToRun, A4Options alloyOptions)
+	public AlloyAnalysisResult analyzeCommand(AlloyCommand commandToRun, A4Options alloy4Options)
 			throws VizException, AlloyAnalysisException {
 
-		A4Options alloy4Options = build_A4Options();
+//		A4Options alloy4Options = build_A4Options();
 
 		AlloyJNILibraryPath alloyJNILibraryPath = new AlloyJNILibraryPath();
 		alloyJNILibraryPath.setupJNILibraryPath();
