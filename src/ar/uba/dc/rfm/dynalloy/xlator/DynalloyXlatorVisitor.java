@@ -445,9 +445,6 @@ public class DynalloyXlatorVisitor extends DynalloyVisitor {
 
 		PredicateFormula pre = VariableIndexer.substituteAndIndex(context.getActionPre(actionId), formalPs, actualPs);
 		AlloyFormula post = VariableIndexer.substituteAndIndex(context.getActionPost(actionId), formalPs, actualPs);
-		if(options.getNegatePost()) {
-			post = new NotFormula(post);
-		}
 		
 		AlloyFormula alloyFormula = new AndFormula(pre, post);
 
