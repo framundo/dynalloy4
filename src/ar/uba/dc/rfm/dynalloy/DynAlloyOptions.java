@@ -152,6 +152,4 @@ public class DynAlloyOptions {
 	public boolean getNegatePost() {
 		return this.negatePost;
 	}
-	
-	
 } 

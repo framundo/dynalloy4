@@ -96,7 +96,6 @@ public class AlloyAnalyzer {
 			log.alloy2kodkod(command);
 			answer = TranslateAlloyToKodkod.execute_command(
 				log, world.getAllReachableSigs(), command, alloy4Options);
-			
 		} catch (Err e) {
 			throw new AlloyAnalysisException(e.getMessage());
 		}
